@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      // Default consent = denied -> předchází spuštění tagů, dokud uživatel nedá souhlas
+      window.dataLayer.push({
+        'event': 'default_consent',
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied'
+      });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      if (localStorage.getItem("cookie_consent") === "granted") {
+        (function(w,d,s,l,i){
+          w[l]=w[l]||[];
+          w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;
+          j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+          f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MDSW2TWM');
+      }
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honza - Data Analyst & Digital Detective</title>
+    <meta name="description" content="Data analyst who treats analytics like detective work. Between a tag and a trigger, truth hides." />
+    <meta name="author" content="Honza" />
+
+    <meta property="og:title" content="Honza - Data Analyst & Digital Detective" />
+    <meta property="og:description" content="Some people chase clicks. I chase meaning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Honza" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDSW2TWM"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
