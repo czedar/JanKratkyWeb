@@ -18,7 +18,7 @@ const Index = () => {
   const [eventData, setEventData] = useState<{ id: string; time: string } | null>(null);
 
   const headlines = [
-    "Data says, this is the first thing you’ve read here.",
+    "My data say this is your first read here.",
     "Between a tag and a trigger, truth hides.",
     "I measure everything. Even this sentence.",
   ];
